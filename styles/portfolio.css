@@ -1,0 +1,38 @@
+:root {
+--textColor: black;
+--bgColor:cyan;
+}
+
+
+.myName{
+padding: 5px;
+background-color:var(--bgColor);
+color:var(--textColor);
+margin-right: 1px;
+display: flex;
+overflow: hidden;
+flex-direction: row;
+font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.navBar{
+display:flex;
+flex-direction: row-reverse
+}
+.dropButton{
+    cursor:pointer;
+    background: url(.\images\three-horizontal-lines.svg);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 8px;;
+    right: 9px;
+
+}
+.ddContent{
+list-style-type: none;
+display: none;
+}
+ .navBar:hover .ddContent{
+display:block ;
+list-style-type: none;
+ }
